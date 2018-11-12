@@ -2,8 +2,35 @@
 <html lang="en-US">
     <head>
      <title>Wow</title>
+     <style>
+         *{
+             margin:0;
+             padding:0;
+         }
+     #map{
+         height:1000px;
+         width:100%;
+     }
+
+         </style>
     </head>
     <body>
+        <div id ="map"></div>
 
+
+    <script>
+         function initMap(){
+             var location = {
+                 lat: -25.363,
+                 lng:131.044
+             }
+             var map = new google.maps.Map(document.getElementById("map"),{zoom:5,
+             center: location  });
+
+         }
+       
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW0mKRkFnWa26mvjazRlrBetmS3_IzhCI&callback=initMap
+    "></script>
     </body>
 </html>
